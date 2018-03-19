@@ -10,6 +10,10 @@ end
 gem 'rails', '~> 5.1.5'
 #Sessions gem
 gem 'devise'
+#admin panel
+gem 'rails_admin'
+# Active link
+gem 'active_link_to'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
