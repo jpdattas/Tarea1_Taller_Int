@@ -10,6 +10,10 @@ end
 gem 'rails', '~> 5.1.5'
 #Sessions gem
 gem 'devise'
+group :development do
+  gem "rails-erd"
+end
+
 #admin panel
 gem 'rails_admin'
 # Active link
