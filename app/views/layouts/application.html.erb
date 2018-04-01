@@ -24,11 +24,11 @@
       <ul class="nav navbar-nav navbar-right">
         <% if user_signed_in?%>
           <%if try(:current_user).try(:admin?)%>
-          <li>
-            <a href="<%='/admin/noticium'%>">
-            <span class="glyphicon glyphicon-scale"></span>
-            <%="Administrar Noticias"%></a>
-          </li>
+            <li>
+              <a href="<%='/noticia'%>">
+              <span class="glyphicon glyphicon-scale"></span>
+              <%="Administrar Noticias"%></a>
+            </li>
           <%end%>
           <li>
             <a>

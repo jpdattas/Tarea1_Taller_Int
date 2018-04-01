@@ -1,4 +1,29 @@
 <h2>Noticias en Vivo</h2>
-<p>
-  The time is now: <%= Time.now %>
-</p>
+</div>
+<br>
+<br>
+<br>
+<div class="container">
+<div>
+  <% @noticias.each do |noticia| %>
+    <div class="col-sm-6 well well-sm" style="background-color:lightblue">
+      <p>
+        <h1><%= noticia.titulo%></h3>
+      </p>
+      <p>
+        <h2><%= noticia.bajada%></h2>
+      </p>
+      <br>
+      <p>
+        <h4><%= noticia.cuerpo%></h4>
+      </p>
+      <br>
+      <div class="well">
+        <h6><%= noticia.created_at%></h6>
+        <h6> <%= link_to "Ver", "/noticia/"+noticia.id.to_s, :class => "btn btn-default"%></h6>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+</div><!--related articles box-->
